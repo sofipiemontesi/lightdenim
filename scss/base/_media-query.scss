@@ -40,6 +40,9 @@
         transition: all .25s;
         transform: translateX(0%);
     }
+    main .heroSection{
+        background-size: auto;
+    }
     /*-------NOVEDADES-------*/
     .headerNovedades{
         z-index: 10;
