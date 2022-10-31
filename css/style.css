@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,500;0,800;1,500;1,800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+/*--------------BODY--------------*/
+.gridContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 80px auto auto ;
+    gap: 0px 0px;
+    grid-template-areas:
+    "header header header"
+    "main main main"
+    "footer footer footer";
+}
+/*--------------HEADER--------------*/
+header{
+    background-color:rgb(129, 202, 207);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    grid-area: header;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+header .logo{
+    bottom: 10px;
+    left: 20px;
+}
+header div h1{
+    color: antiquewhite;
+    margin-left: 20px;
+    font-family:'Exo', sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 35px;
+}
+header div h2{
+    color: rgb(90, 143, 123);
+    font-family:'Exo', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 25px;
+    margin-left: 20px;
+}
+header .logoMenu{
+    width: 40px;
+    height: 40px;
+}
+header .logoMenu span{
+    width: 100%;
+    height: 10%;
+    margin-top: 6px;
+    background-color: antiquewhite;
+}
+#check{
+    display: none;
+}
+header nav ul{
+    font-family:'Exo', sans-serif;
+    list-style: none;
+    margin: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+header nav ul li{
+    transition-property: scale;
+    transition-duration: 2s;
+}
+header nav ul li:hover{
+    scale:1.2;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: antiquewhite;
+    font-style: italic;
+    margin: 20px;
+}
+header nav ul li a:hover{
+    color: rgb(90, 143, 123);
+}
+/*--------------MAIN--------------*/
+main{
+    grid-area: main;
+}
+.heroSection{
+    background-image: url(../img/hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: calc(100vh - 78.55px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.newIn{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.heroSection .newIn h3{
+
+    color: rgb(90, 143, 123);
+    font-family: 'Exo', sans-serif;
+    font-size: 60px;
+    top: 320px;
+}
+.heroSection .newIn a{
+
+    background-color: rgba(90, 143, 123, 0.3);
+    color: antiquewhite;
+    padding: 5px;
+    margin: 5px;
+    text-decoration: none;
+    font-family: 'Exo', sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    top: 390px;    
+    transition-property: scale;
+    transition-duration: 3s;
+}
+.heroSection .newIn a:hover{
+    background-color:  rgb(90, 143, 123);
+    scale: 1.05;
+}
+/*paleta https://colorhunt.co/palette/3557645a8f7b81cacfffea11*/
+.productosInicio{
+    margin: 30px;    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline ;
+}
+.productosInicio div{
+    text-align: center;
+    font-family:'Exo', sans-serif;
+    color: rgb(90, 143, 123);
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.productosInicio div img{
+    margin: 10px;
+    width: 320px;
+    height: 480px;
+}
+/*-----------PRODUCTOS------------*/
+.tituloProductos h2{
+    color: rgb(90, 143, 123);
+    background-color: antiquewhite;
+    text-align: center;
+    font-family:'Exo', sans-serif;
+    font-style: italic;
+    font-size: 35px;
+    padding: 5px;
+}
+.productos{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    text-align: center;
+    font-family:'Exo', sans-serif;
+    color: rgb(90, 143, 123);
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.productos div{
+    position:relative;
+    width: 320px;
+    height: 480px;
+    margin: 30px;
+}
+.productos div img{
+    width: 320px;
+    height: 480px;
+}
+.productos div h3{
+    background-color: rgba(250, 235, 215, 0.679);
+    width: 320px;
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+}
+/*----------COLECCIONES-------------*/
+.tituloColecciones h2{
+    color: rgb(90, 143, 123);
+    background-color: antiquewhite;
+    text-align: center;
+    font-family:'Exo', sans-serif;
+    font-style: italic;
+    font-size: 35px;
+    padding: 5px;
+}
+.colecciones{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    text-align: center;
+    font-family:'Exo', sans-serif;
+    color: rgb(90, 143, 123);
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.colecciones div{
+    position:relative;
+    width: 320px;
+    height: 480px;
+    margin: 20px;
+}
+.colecciones div img{
+    width: 320px;
+    height: 480px;
+}
+.colecciones div h3{
+    background-color: rgba(250, 235, 215, 0.679);
+    width: 320px;
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+}
+/*------------NOVEDADES-------------*/
+.novedades h2{
+    color: rgb(90, 143, 123);
+    background-color: antiquewhite;
+    text-align: center;
+    font-family:'Exo', sans-serif;
+    font-style: italic;
+    font-size: 35px;
+    font-weight: 700;
+    padding: 5px;
+    margin: 0px;
+}
+/*.carousel-inner{
+    top: 0px;
+}*/
+.d-block{
+    width: auto;
+    height: auto;
+    max-height: 800px ;
+    max-width: 1600px;
+}
+.sustentabilidad{
+    color: rgb(90, 143, 123);
+    font-family:'Exo', sans-serif;
+    /*text-align: start;*/
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.sustentabilidad div img{
+    width: 300px;
+    height: 460px;
+    margin: 20px;
+}
+.sustentabilidadTexto{
+    margin: 20px;
+}
+.sustentabilidadTexto h2{
+    text-decoration: underline;
+    font-style: italic;
+    font-size: 30px;
+}
+.sustentabilidadTexto h3{
+    font-weight: 800;
+}
+/*-------------CONTACTO-------------*/
+.tituloContacto h2{
+    color: rgb(90, 143, 123);
+    background-color: antiquewhite;
+    text-align: center;
+    font-family:'Exo', sans-serif;
+    font-style: italic;
+    font-size: 35px;
+    padding: 5px;
+}
+.formulario{
+    color: rgb(90, 143, 123);
+    font-family:'Exo', sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+.formulario form div{
+    margin: 8px;
+}
+.formulario form div textarea{
+    width: 50%;
+}
+.ubicacion{
+    text-align: center;
+}
+.ubicacion h2{
+    font-family: 'Exo', sans-serif;
+    margin-top: 30px;
+    color: rgb(90, 143, 123);
+}
+.ubicacion iframe{
+    margin: 15px;
+}
+
+/*--------------FOOTER--------------*/
+footer{
+    background-color:rgb(129, 202, 207);
+    font-family: 'Exo', sans-serif;
+    color: rgb(90, 143, 123);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    grid-area: footer;
+}
+.logoContacto{
+    margin: 10px;
+}
+.logoContacto a img{
+    width: 30px;
+    height: 30px;
+}
+.logoContacto a img:hover{
+    scale: 1.2;
+}
+.footerNewsletter{
+    margin: 10px;
+    text-align: center;
+}
+.footerNewsletter h2{
+    color: antiquewhite;
+    margin: 10px;
+}
+.footerNewsletter p{
+    font-size: small;
+}
+.footerNewsletter input{
+    width: 300px;
+}
+.footerTexto{
+    padding: 5px;
+    margin: 10px;
+    font-size: small;
+}
+@media screen and (max-width:750px){
+    .checkButton{
+        display: block;
+    }
+    header .menuHamburguesa label .logoMenu{
+        display:flex;
+        flex-direction: column;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+    }
+    .menuHamburguesa nav ul{
+        display: flex;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 80px;        
+        left: -100%;
+        transform: translateX(-105%);
+    }
+    header .menuHamburguesa nav ul{
+        display: block;
+        position: fixed;
+        font-size: 20px;
+        background-color: rgb(90, 143, 123);
+        margin: 0px;
+        width: 100%;
+        height: 100vh;
+        right: 0;
+    }
+    header nav ul li{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    #check:checked ~ nav ul{
+        left: 0%;
+        transition: all .25s;
+        transform: translateX(0%);
+    }
+
+    /*-------NOVEDADES-------*/
+    .headerNovedades{
+        z-index: 10;
+    }
+    .sustentabilidad{
+        flex-wrap: wrap;
+    }
+    #check:checked ~ .carrusel{
+        display: none;
+        top: -500px;
+    }
+
+}

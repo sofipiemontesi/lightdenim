@@ -1,0 +1,49 @@
+@import "../base/variables";
+
+/*--------------FOOTER-----------*/
+footer {
+    background-color: $color-principal;
+    font-family: 'Exo', sans-serif;
+    color: $color-secundario;
+    @extend %flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    grid-area: footer;
+
+    .logoContacto {
+        margin: 10px;
+
+        a {
+            img {
+                @include dimensions (30px, 30px);
+                &:hover {
+                    scale: 1.2;
+                }
+            }
+        }
+    }
+
+    .footerNewsletter {
+        margin: 10px;
+        text-align: center;
+
+        h2 {
+            color: $color-terciario;
+            margin: 10px;
+        }
+
+        p {
+            font-size: small;
+        }
+
+        input {
+            width: 300px;
+        }
+    }
+
+    .footerTexto {
+        padding: 5px;
+        margin: 10px;
+        font-size: small;
+    }
+}

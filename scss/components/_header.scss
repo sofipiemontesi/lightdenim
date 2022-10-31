@@ -1,0 +1,79 @@
+@import "../base/variables";
+
+/*------HEADER------*/
+header{
+    background-color: $color-principal;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: header;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    .logo{
+        padding: 0px;
+    }
+    div{
+        h1{
+            color: $color-terciario;
+            margin-left: 20px;
+            font-family:'Exo', sans-serif;
+            font-weight: 800;
+            font-style: italic;
+            font-size: 35px;
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+        h2{
+            color: $color-secundario;
+            font-family:'Exo', sans-serif;
+            font-weight: 500;
+            font-style: italic;
+            font-size: 25px;
+            margin-left: 20px;
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+    }
+    .menuHamburguesa{
+        #check{
+            display: none;
+        }
+        .checkButton{
+            .logoMenu{
+                @include dimensions (40px, 40px);
+                span{
+                    @include dimensions (100%, 10%);
+                    margin-top: 6px;
+                    background-color: $color-terciario;
+                }
+            }
+        }
+    }
+    nav{
+        ul{
+            font-family:'Exo', sans-serif;
+            list-style: none;
+            margin: 20px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-end;
+            li{
+                transition-property: scale;
+                transition-duration: 2s;
+                &:hover{
+                    scale:1.2;
+                }
+                a{
+                    text-decoration: none;
+                    color: $color-terciario;
+                    font-style: italic;
+                    margin: 20px;
+                    &:hover{
+                        color: $color-secundario;
+                    }
+                }                
+            }            
+        }
+    }
+}

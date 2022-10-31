@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,500;0,800;1,500;1,800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.gridContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 80px auto auto ;
+    gap: 0px 0px;
+    grid-template-areas:
+    "header header header"
+    "main main main"
+    "footer footer footer";
+}
+/*paleta de colores https://colorhunt.co/palette/3557645a8f7b81cacfffea11*/

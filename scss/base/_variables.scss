@@ -1,0 +1,16 @@
+$color-principal: rgb(129, 202, 207);
+$color-secundario: rgb(90, 143, 123);
+$color-terciario: antiquewhite;
+
+//EXTEND
+%flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//MIXIN
+@mixin dimensions ($width, $height){
+    width: $width;
+    height: $height;
+}
