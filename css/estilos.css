@@ -319,7 +319,7 @@ footer {
     transition: all .25s;
     transform: translateX(0%); }
   main .heroSection {
-    background-attachment: none; }
+    background-attachment: scroll; }
   /*-------NOVEDADES-------*/
   .headerNovedades {
     z-index: 10; }
