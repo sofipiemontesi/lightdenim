@@ -319,6 +319,8 @@ footer {
     transition: all .25s;
     transform: translateX(0%); }
   main .heroSection {
+    background-image: url(../img/hero.jpg);
+    background-size: cover;
     background-attachment: scroll; }
   /*-------NOVEDADES-------*/
   .headerNovedades {
