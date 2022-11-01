@@ -318,6 +318,8 @@ footer {
     left: 0%;
     transition: all .25s;
     transform: translateX(0%); }
+  main .heroSection {
+    background-attachment: none; }
   /*-------NOVEDADES-------*/
   .headerNovedades {
     z-index: 10; }
