@@ -57,7 +57,7 @@ main {
             margin-right: 30px;
             img {
                 margin: 10px;
-                @include dimensions (320px, 480px);
+                @include dimensions (320px, 480px);                               
             }
         }
     }

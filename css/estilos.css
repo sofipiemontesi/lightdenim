@@ -329,4 +329,8 @@ footer {
     flex-wrap: wrap; }
   #check:checked ~ .carrusel {
     display: none;
-    top: -500px; } }
+    top: -500px; }
+  /*-------CONTACTO-------*/
+  main .ubicacion iframe {
+    width: 300px;
+    height: auto; } }
