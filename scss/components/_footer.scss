@@ -11,7 +11,8 @@ footer {
     grid-area: footer;
 
     .logoContacto {
-        margin: 10px;
+        margin: 0px;
+        margin-top: 0;
 
         a {
             img {
@@ -29,21 +30,40 @@ footer {
 
         h2 {
             color: $color-terciario;
+            padding: 0;
             margin: 10px;
+            font-size: 24px;
+            font-weight: 800;
         }
 
         p {
+            margin: 0;
+            padding: 0;
             font-size: small;
         }
 
         input {
             width: 300px;
+            height: 20px;
+        }
+        button{
+            font-family: 'Exo', sans-serif;
+            font-size: 16px;
+            color: $color-secundario;
+            background-color: $color-terciario;
+            border: 1px $color-secundario;
+            width: 60px;
+            height: 22px;
         }
     }
 
     .footerTexto {
-        padding: 5px;
-        margin: 10px;
+        padding: 0px;
+        margin: 0px;
         font-size: small;
+        p{
+            padding: 0;
+            margin: 0;
+        }
     }
 }
